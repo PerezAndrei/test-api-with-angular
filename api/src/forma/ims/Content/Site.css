@@ -1,0 +1,103 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a.navbar-brand img {
+    width: 50px;
+    height: 25px;
+}
+
+.navbar-default {
+    background-color: #e2e2e2;
+}
+
+.navbar {
+    position: inherit;
+    margin-top: -50px;
+    margin-bottom: 0; 
+}
+.container.body-content {
+    margin-top: 40px;
+}
+
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+} 
+
+
+input.my-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-right: 5px;
+    float: left;
+}
+
+div.progress {
+    margin-bottom: 5px;
+}
+
+.domain-content {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+#login-free, #login-exist {
+    display: none;
+}
+
+div.select-error button, input.input-error {
+    border-color: #a94442;
+}
+
+span.required {
+    color: red;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:100px) { 
+    .body-content {
+        width: 100%;
+    }
+}
+
+@media (min-width:430px) { 
+}
+
+@media (min-width:768px) { 
+    .body-content {
+        width: 70%;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .body-content {
+        width: 60%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .body-content {
+        width: 40%;
+    }
+}
+

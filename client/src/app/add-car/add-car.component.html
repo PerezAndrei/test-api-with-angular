@@ -1,0 +1,52 @@
+
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" #modalTitle>Add CAR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form #form="ngForm" (ngSubmit)="submitForm(form)" [ngClass]="{'was-validated':check}">
+            <div class="form-group">
+              <input type="hidden" value="0" />
+              <label for="car-type">Type</label>
+              <input [(ngModel)]="type" name="type" type="text" class="form-control" id="car-type" aria-describedby="emailHelp" placeholder="Type" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Fill out this field, please!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="car-model">Model</label>
+              <input [(ngModel)]="model" name="model" type="text" class="form-control" id="car-model" placeholder="Model" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Fill out this field, please!
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="car-year">Year</label>
+              <input [(ngModel)]="year" name="year" type="number" step="1"  class="form-control" id="car-year" placeholder="Year" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Fill out this field, please!
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">add</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal" #closeModalBtn>close</button>
+        </div>
+      </div>
+    </div>
+  </div>
